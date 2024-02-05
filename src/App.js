@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './NavBar';
+import Main from './Main';
 
+const movies =[{
+  name: "Coco",
+  imageUrl:  "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_.jpg",
+  genre: "Animation, Adventure, Drama",
+  director: "Adrian Molina, Lee Unkrich",
+  description: "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+  imdb: "8.4"
+  
+  },
+  {
+  name: "Forrest Gump",
+  imageUrl: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15829_v_v13_aa.jpg",
+  genre: "Drama, Romance",
+  director: "Robert Zemeckis",
+  description: "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+  imdb: "8.8"
+  }
+];
+
+const feedbacks=[{
+user: "",
+comment:""
+},
+{
+  
+}];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar></NavBar>
+      <Main movies={movies} ></Main>
+      
     </div>
   );
 }
