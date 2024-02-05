@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './NavBar';
 import Main from './Main';
+import Feedback from './FB';
 
 const movies =[{
   name: "Coco",
@@ -22,18 +23,19 @@ const movies =[{
 ];
 
 const feedbacks=[{
-user: "",
-comment:""
+user: "Antonio",
+comment:"It was great movie!!!"
 },
 {
-  
+  user: "Enjolras",
+  comment: "Woww"
 }];
 function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
       <Main movies={movies} ></Main>
-      
+      <Feedback feedbacks={feedbacks}></Feedback>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.fb{
+    background-color: rgba(29, 85, 42, 0.841);
+    padding: 30px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.fb-items{
+    border: 2px solid rgb(75, 156, 87);
+    border-radius: 30%;
+    color: white;
+    font-size: 33px;
+    padding: 10px 40px;
+}
